@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white_fff">#f4f2f2</color>
+    <color name="black_000">#000000</color>
+    <color name="color_ff4040">#ff4040</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_25232e">#25232e</color>
+    <color name="color_333440">#333440</color>
+    <color name="color_33333440">#66333440</color>
+    <color name="color_5f97ff">#5f97ff</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_784606">#784606</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+
+    <color name="color_ccffffff">#ccffffff</color>
+    <color name="color_42ffffff">#77b6b4b4</color>
+    <color name="gray_text">#919191</color>
+    <color name="gray_btn">#EBEBEB</color>
+    <color name="gray_bg">#f0eff5</color>
+    <color name="gray_line">#ebebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#212121</color>
+
+    <!-- 图片选择器库里所有Activity界面的背景色 -->
+    <color name="bga_pp_activity_bg">@color/white_fff</color>
+    <!-- 右上角确认按钮不可用时的颜色 -->
+    <color name="bga_pp_btn_confirm_disabled">@color/color_ff4040</color>
+    <!-- 右上角确认按钮可用时的颜色 -->
+    <color name="bga_pp_btn_confirm_enabled">@color/color_ff4040</color>
+    <!-- 右上角确认按钮按下时的颜色 -->
+    <color name="bga_pp_btn_confirm_pressed">@color/color_ff4040</color>
+    <!-- PhotoPicker 导航栏的颜色 -->
+    <color name="bga_pp_navigationBarColor">@color/white_fff</color>
+    <!-- PhotoPicker Toolbar 的颜色 -->
+    <color name="bga_pp_colorPrimary">@color/white_fff</color>
+    <!-- 预览界面底部背景色 -->
+    <color name="bga_pp_preview_bottom_bg">@color/color_ff4040</color>
+    <color name="home_v_color_1">#000000</color>
+    <color name="home_v_color_2">#dbe7e9</color>
+    <color name="home_v_color_3">#fadd53</color>
+</resources>

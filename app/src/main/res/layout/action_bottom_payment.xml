@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pay_bottom_back"
+    android:layout_height="@dimen/normal_40dp"
+    android:layout_marginLeft="@dimen/normal_h_16dp"
+    android:layout_marginRight="@dimen/normal_h_16dp"
+    android:background="@drawable/login_btn_bg"
+    android:gravity="center"
+    android:textColor="@color/white_fff"
+    android:layout_marginTop="@dimen/normal_40dp"
+    android:text="@string/go_back_payment_hint"
+    android:textSize="@dimen/normal_txt_18sp">
+
+
+</Button>

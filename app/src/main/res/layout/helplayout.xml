@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/myteam_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="使用说明"
+        app:Title_Color="@color/black_000" />
+
+   <LinearLayout
+       android:layout_marginTop="@dimen/dp_10"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical">
+          <TextView
+              android:id="@+id/help"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#ff4040"
+              android:textSize="16sp"
+              android:text="如何使用"/>
+           <View
+               android:id="@+id/helpview"
+               android:layout_marginTop="8dp"
+               android:layout_width="60dp"
+               android:layout_height="1dp"
+               android:background="#ff4040"
+           />
+       </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+               <TextView
+                   android:id="@+id/help2"
+                   android:textSize="16sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#333333"
+                   android:text="如何获得"/>
+               <View
+                   android:visibility="gone"
+                   android:layout_marginTop="8dp"
+                   android:id="@+id/helpview2"
+                   android:layout_width="60dp"
+                   android:layout_height="1dp"
+                   android:background="#ff4040"
+                   />
+           </LinearLayout>
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/help3"
+                       android:textColor="#333333"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       android:text="释放速度"/>
+                   <View
+                       android:visibility="gone"
+                       android:layout_marginTop="8dp"
+                       android:id="@+id/helpview3"
+                       android:layout_width="60dp"
+                       android:layout_height="1dp"
+                       android:background="#ff4040"
+                       />
+               </LinearLayout>
+       </LinearLayout>
+    <View
+
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        />
+<TextView
+    android:id="@+id/helpcontent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    android:lineSpacingExtra="5dp"
+    android:textSize="15sp"
+    android:text="1.选择【首页】-> 点击【数字货币】按钮，然后点击右上角提币按钮，输入GSC数量和转出地址，确认无误后点击立即提币即可。
+"/>
+</LinearLayout>

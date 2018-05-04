@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@mipmap/img_bg_wode">
+
+        <ImageView
+            android:id="@+id/mine_header"
+            android:layout_width="@dimen/normal_64dp"
+            android:layout_height="@dimen/normal_64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/normal_72dp" />
+
+        <TextView
+            android:id="@+id/mine_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/normal_v_16dp"
+            android:text="未登录"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:background="@drawable/mine_ver_name_trans_bg"
+            android:paddingRight="@dimen/normal_4dp"
+            android:textColor="@color/white_fff"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/mine_ver_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/normal_6dp"
+            android:background="@drawable/mine_ver_name_bg"
+            android:paddingBottom="@dimen/normal_6dp"
+            android:paddingLeft="@dimen/normal_12dp"
+            android:paddingRight="@dimen/normal_12dp"
+            android:paddingTop="@dimen/normal_6dp">
+
+            <TextView
+                android:id="@+id/mine_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_ver_name_hint"
+                android:textColor="@color/white_fff"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_6dp"
+                android:layout_toRightOf="@+id/mine_ver"
+                android:rotation="180"
+                android:src="@drawable/icon_fanhui_bai" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/normal_6dp">
+
+        <RelativeLayout
+            android:id="@+id/mine_daifukuan_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mine_icon_daifukuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_daifukuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_daifukuan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_daifukuan_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_points1_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_points1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_wode_jifen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_points1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_points_hint" />
+        </RelativeLayout>
+
+        <!--00000000000000000-->
+
+        <RelativeLayout
+            android:id="@+id/mine_dun1_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_dun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_daishoukuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_dun1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_dun_hint" />
+        </RelativeLayout>
+
+        <!--00000000000000-->
+
+        <RelativeLayout
+            android:id="@+id/mine_daipingjia_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mine_icon_daipingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_daiipngjia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_daipingjia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_pingjia_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_voucher1_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_voucher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_wode_fuwuquan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_voucher1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_voucher_hint" />
+        </RelativeLayout>
+
+        <!--00000000000000-->
+
+        <RelativeLayout
+            android:id="@+id/mine_tuihuan_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/mine_icon_tuihuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_tuihuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_tuihuan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_tuihuan_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_daishouhuo_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_daishouhuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_daishoukuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_daishouhuo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_daishouhuo_hint" />
+        </RelativeLayout>
+
+        <!--000000000000-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wode_img_jiantou"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/mine_order_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_wodedingdan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_order"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="@string/mine_order_hint" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:background="@color/color_dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/mine_points_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/normal_4dp">
+
+            <TextView
+                android:id="@+id/mine_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_24dp"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_points"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:text="@string/mine_points_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_18sp" />
+
+        </RelativeLayout>
+
+        <!--0000000000000-->
+
+        <RelativeLayout
+            android:id="@+id/mine_dun_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/normal_4dp">
+
+            <TextView
+                android:id="@+id/mine_dun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_24dp"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_dun"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:text="@string/mine_dun_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_18sp" />
+
+        </RelativeLayout>
+
+        <!--00000000000000000-->
+
+        <RelativeLayout
+            android:id="@+id/mine_voucher_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/normal_4dp">
+
+            <TextView
+                android:id="@+id/mine_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_24dp"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_voucher"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:text="@string/mine_voucher_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_4dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mine_pay_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_daifukuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_pay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="充值记录" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_charge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_chargeiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icontibi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_chargeiv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="提币流水" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mine_icon_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iconqiandao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_icon_sign"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/normal_6dp"
+                android:text="签到" />
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
+        android:paddingBottom="@dimen/normal_v_16dp"
+        android:paddingTop="@dimen/normal_10dp">
+
+        <RelativeLayout
+            android:id="@+id/mine_invite_container"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@mipmap/img_banner_wode">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/mine_invite_hint"
+                android:textColor="@color/white_fff"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mine_support_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mine_support_tel_hint"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/normal_6dp"
+            android:layout_toLeftOf="@+id/mine_support_tel"
+            android:src="@drawable/icon_dianhua" />
+
+    </RelativeLayout>
+
+</LinearLayout>

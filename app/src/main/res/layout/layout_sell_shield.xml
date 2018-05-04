@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/shield_title"
+        app:Title_Color="@color/black_000" />
+
+    <TextView
+        android:id="@+id/shield_can_sell_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_txt_16sp"
+        android:textColor="@color/color_784606"
+        android:text="可卖数量:500"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_32dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:layout_marginRight="@dimen/normal_24dp"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="@string/shield_sell_plan_hint"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <RelativeLayout
+            android:id="@+id/shield_plan_sell_container"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_weight="5"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_4dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:background="@drawable/home_title_bg"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:paddingRight="@dimen/normal_6dp"
+            android:elevation="@dimen/normal_4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_12dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_12dp"
+                android:src="@drawable/arrow_red_down" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/shield_plan_sell"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_4dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            android:layout_weight="5"
+            android:background="@drawable/home_title_bg"
+            android:elevation="@dimen/normal_4dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:paddingRight="@dimen/normal_6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shield_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_txt_16sp"
+        android:textColor="@color/color_784606"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        android:text="单价:5.10元"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:layout_marginRight="@dimen/normal_24dp"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="@string/tickets_pwd_hint"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <EditText
+            android:id="@+id/shield_password"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_4dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            android:layout_weight="5"
+            android:background="@drawable/home_title_bg"
+            android:elevation="@dimen/normal_4dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:paddingRight="@dimen/normal_6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shield_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_txt_16sp"
+        android:textColor="@color/color_784606"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        android:text="可卖价值:10000.00元"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shield_select_bank_hint"
+        android:textSize="@dimen/normal_txt_16sp"
+        android:textColor="@color/color_666666"
+        android:layout_marginTop="@dimen/normal_24dp"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/shield_select_bank"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        android:background="@drawable/home_title_bg"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:elevation="@dimen/normal_4dp">
+
+        <TextView
+            android:id="@+id/shield_bank_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_12dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_12dp"
+            android:src="@drawable/arrow_red_down" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/shield_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/reset_confirm"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

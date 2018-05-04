@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/recommend_title"
+        app:Title_Color="@color/black_000" />
+
+    <ImageView
+        android:id="@+id/recommend_qr_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_48dp"
+        android:src="@drawable/img_morenshangpin" />
+
+    <TextView
+        android:id="@+id/recommend_download_link_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_32dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_333333"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        >
+
+        <TextView
+            android:id="@+id/recommend_show_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <LinearLayout
+            android:id="@+id/recommend_wechat_container"
+            android:layout_width="@dimen/normal_72dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recommend_show_hint"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/normal_32dp"
+                android:layout_height="@dimen/normal_32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/recommend_wechat_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommend_qq_container"
+            android:layout_width="@dimen/normal_72dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recommend_wechat_container"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/normal_32dp"
+                android:layout_height="@dimen/normal_32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/recommend_qq_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommend_weibo_container"
+            android:layout_width="@dimen/normal_72dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recommend_qq_container"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/normal_32dp"
+                android:layout_height="@dimen/normal_32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/recommend_weibo_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommend_moments_container"
+            android:layout_width="@dimen/normal_72dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recommend_weibo_container"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/normal_32dp"
+                android:layout_height="@dimen/normal_32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pengyouquan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/recommend_moments_hint"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_24dp"
+        android:text="@string/recommend_msg_hint"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_txt_16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/recommend_btn_completed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_36dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/set_pwd_btn_complete"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

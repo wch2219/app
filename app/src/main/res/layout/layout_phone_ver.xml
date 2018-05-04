@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/fast_regist_phone"
+        app:Title_Color="@color/black_000" />
+
+    <TextView
+        android:id="@+id/fast_regist_phone_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_12dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:textColor="@color/black_000"
+        android:textSize="@dimen/normal_txt_14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_12dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/fast_regist_ver_num"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:theme="@style/edittext_gray_black_normal"
+            android:hint="@string/please_input_ver_num"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/fast_regist_get_ver"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/normal_32dp"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="@string/get_ver_num"
+            android:textColor="@color/white_fff"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fast_regist_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/regist_next_step"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

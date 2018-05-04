@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShopCatActivity">
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="我的购物车"
+        android:id="@+id/commtitle"
+        android:background="@color/white"
+        app:Divider_Visiable="true"
+        app:Right_Res="@drawable/icon_fanhui"
+        app:Title_Color="@color/black">
+
+    </com.xxc.shoppingmall.widget.CommonTitle>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:id="@+id/ll_noentry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <CheckBox
+                    android:id="@+id/cb_allcheck"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selete_shopcat_check"
+                    android:text="  泓济自营"
+                    android:layout_margin="@dimen/dp_10"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_0.5dp"
+                    android:background="@color/gray_cc"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/normal_50dp"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/entrycat"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+                </LinearLayout>
+                <com.xxc.shoppingmall.widget.NoScrollListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_list"
+                    ></com.xxc.shoppingmall.widget.NoScrollListView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="推荐商品"
+                        />
+                <com.xxc.shoppingmall.widget.NoScrollGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_listtuijian"
+                    android:numColumns="2"
+                    android:layout_margin="@dimen/dp_10"
+                    android:horizontalSpacing="@dimen/dp_10"
+                    ></com.xxc.shoppingmall.widget.NoScrollGridView>
+            </LinearLayout>
+
+        </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_8f"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共计："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="¥ 0.0"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_gopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="去结算"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/myteam_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="我的团队"
+        app:Title_Color="@color/black_000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myteam_title"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/home_notice_icon"
+            android:layout_width="@dimen/normal_16dp"
+            android:layout_height="@dimen/normal_16dp"
+
+            android:layout_marginLeft="@dimen/normal_10dp"
+
+            android:src="@drawable/home_notice_vector" />
+
+        <com.xxc.shoppingmall.widget.NoticeView
+            android:id="@+id/home_public_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/home_notice_icon"
+
+            android:layout_marginLeft="@dimen/normal_2dp"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_10dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/head_my"
+            android:layout_marginLeft="150dp"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/normal_50dp"
+            android:layout_height="@dimen/normal_50dp"
+            android:src="@drawable/img_morentouxiang"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/normal_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总人数:"
+
+            />
+        <TextView
+            android:id="@+id/team_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人"
+
+            />
+
+    </LinearLayout>
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/team_browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myteam_title" >
+
+
+    </com.github.lzyzsd.jsbridge.BridgeWebView>
+
+
+
+    <ImageView
+        android:id="@+id/browser_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_wuwangluo"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xxc.shoppingmall">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 内容提供者定义的权限 -->
+    <uses-permission android:name="com.bqt.permission" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".ShoppingMallApp"
+        android:allowBackup="true"
+        android:icon="@drawable/img_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img_logo"
+        android:supportsRtl="true"
+        tools:replace="android:icon, android:label, android:theme"
+        android:theme="@style/AppTheme">
+        <!--bugly-->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xxc.shoppingmall.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name=".ui.LauncherActivity"
+            android:theme="@style/FirstTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <!-- 应用主界面 -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 重置密码界面 -->
+        <activity
+            android:name=".ui.ResetPwdActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册页面 -->
+        <activity
+            android:name=".ui.RegistActivity"
+            android:screenOrientation="portrait" />
+        <!-- 验证码界面 -->
+        <activity
+            android:name=".ui.PhoneVerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置密码界面 -->
+        <activity
+            android:name=".ui.SetPwdActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录界面 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 重置密码前的确认账号和银行卡界面 -->
+        <activity
+            android:name=".ui.ConfirmAccountActivity"
+            android:screenOrientation="portrait" />
+        <!-- 积分兑换界面 -->
+        <activity
+            android:name=".ui.ConvertPointsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务券界面 -->
+        <activity
+            android:name=".ui.VoucherTicketsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 卖盾页面 -->
+        <activity
+            android:name=".ui.ShieldActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充值中心界面 -->
+        <activity
+            android:name=".ui.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推荐界面 -->
+        <activity
+            android:name=".ui.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 实体店界面 -->
+        <activity
+            android:name=".ui.OfflineMallActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的团队界面 -->
+        <activity
+            android:name=".ui.MyTeamActivity"
+            android:screenOrientation="portrait" />
+        <!-- 内置浏览器 -->
+        <activity
+            android:name=".ui.base.CommonWebBrowser"
+            android:screenOrientation="portrait" />
+        <!-- 上传凭证的界面 -->
+        <activity
+            android:name=".ui.UploadImagesActivity"
+            android:screenOrientation="portrait" />
+        <!-- 交易成功和充值成功的界面 -->
+        <activity
+            android:name=".ui.SuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息界面 -->
+        <activity
+            android:name=".ui.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账户设置 -->
+        <activity
+            android:name=".ui.AccountSettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 信息一览界面 -->
+        <activity
+            android:name=".ui.InfosActivity"
+            android:screenOrientation="portrait" />
+        <!-- 实名认证界面 -->
+        <activity
+            android:name=".ui.AuthNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 地址管理界面 -->
+        <activity
+            android:name=".ui.ManageAddressActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加地址界面 -->
+        <activity
+            android:name=".ui.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <!-- 管理银行卡界面 -->
+        <activity
+            android:name=".ui.ManageBankActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加银行卡界面 -->
+        <activity
+            android:name=".ui.AddBankCardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账号安全的界面 -->
+        <activity
+            android:name=".ui.SysSafeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改登录密码 -->
+        <activity
+            android:name=".ui.ResetPwdWithLoginedActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改交易密码界面 -->
+        <activity
+            android:name=".ui.ResetTradePwdActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置界面 -->
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 功能反馈的界面 -->
+        <activity
+            android:name=".ui.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于的界面 -->
+        <activity
+            android:name=".ui.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 积分明细界面 -->
+        <activity
+            android:name=".ui.PointsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 盾收支账本界面 -->
+        <activity
+            android:name=".ui.ShieldDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务券收支账本界面 -->
+        <activity
+            android:name=".ui.VoucherDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 各种订单界面 -->
+        <activity
+            android:name=".ui.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改昵称的界面 -->
+        <activity
+            android:name=".ui.NickActivity"
+            android:screenOrientation="portrait" />
+        <!-- 帮助页面 -->
+        <activity
+            android:name=".ui.HelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 原生帮助页面 -->
+        <activity
+            android:name=".ui.MyhelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 积分帮助页面 -->
+        <activity
+            android:name=".ui.JifenhelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 券帮助页面 -->
+        <activity
+            android:name=".ui.JuanhelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选取图片页面 -->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 区块链界面 -->
+        <activity
+            android:name=".ui.DigCashActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <!-- 提现记录界面 -->
+        <activity
+            android:name=".ui.PointsCashHistroyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充值记录页面 -->
+        <activity
+            android:name=".ui.PayHistroyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 卖盾记录页面 -->
+        <activity
+            android:name=".ui.ShieldHistroyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提币页面 -->
+        <activity
+            android:name=".ui.DigMoneyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提币流水 -->
+        <activity
+            android:name=".ui.ExtrDetailsActivity"
+            android:screenOrientation="portrait" />
+        !-- 个人信息 -->
+        <activity
+            android:name=".ui.PersonActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改身份证 -->
+        <activity
+            android:name=".ui.ChangePersonIdCardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 高德key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d0b4138d216d29b4ebb8e35b26cde482" />
+        <!-- 签到页面 -->
+        <activity
+            android:name=".ui.SignInActivity"
+            android:screenOrientation="portrait" />
+            <!--商品详情-->
+        <activity android:name=".ui.ProductDescActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--确认订单-->
+        <activity android:name=".ui.AffOrderActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--购物车-->
+        <activity android:name=".ui.ShopCatActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--支付成功-->
+        <activity android:name=".ui.PaySuccActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Divider_Visiable="false"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/infos_title"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_2dp"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_name_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_person_num_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_person_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="账号"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_6dp"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_create_bank_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_create_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_card_num_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_6dp"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_v_account_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_v_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_v_name_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_v_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_wechat_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_v_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:text="河南银行郑州分行"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/infos_reveiver_address_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/infos_receiver_address"
+                android:layout_width="200dp"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+
+    </LinearLayout>
+
+</LinearLayout>

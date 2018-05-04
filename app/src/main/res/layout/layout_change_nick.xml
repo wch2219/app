@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/change_nick_title"
+        app:Title_Color="@color/black_000" />
+
+    <EditText
+        android:id="@+id/change_nick_new_nick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_24dp"
+        android:background="@drawable/home_title_bg"
+        android:elevation="@dimen/normal_4dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/normal_6dp"
+        android:paddingRight="@dimen/normal_6dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_txt_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:text="@string/change_nick_msg_hint"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/normal_txt_14sp" />
+
+    <Button
+        android:id="@+id/change_nick_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/reset_confirm"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_h_16dp">16dp</dimen>
+    <dimen name="normal_v_16dp">16dp</dimen>
+
+    <dimen name="normal_0.5dp">0.5dp</dimen>
+    <dimen name="normal_1dp">1dp</dimen>
+    <dimen name="normal_2dp">2dp</dimen>
+    <dimen name="normal_4dp">4dp</dimen>
+    <dimen name="normal_6dp">6dp</dimen>
+    <dimen name="normal_8dp">8dp</dimen>
+    <dimen name="normal_10dp">10dp</dimen>
+    <dimen name="normal_12dp">12dp</dimen>
+    <dimen name="normal_14dp">14dp</dimen>
+    <dimen name="normal_16dp">16dp</dimen>
+    <dimen name="normal_18dp">18dp</dimen>
+    <dimen name="normal_20dp">20dp</dimen>
+    <dimen name="normal_24dp">24dp</dimen>
+    <dimen name="normal_28dp">28dp</dimen>
+    <dimen name="normal_30dp">30dp</dimen>
+    <dimen name="normal_32dp">32dp</dimen>
+    <dimen name="normal_36dp">36dp</dimen>
+    <dimen name="normal_40dp">40dp</dimen>
+    <dimen name="normal_48dp">48dp</dimen>
+    <dimen name="normal_50dp">50dp</dimen>
+    <dimen name="normal_54dp">54dp</dimen>
+    <dimen name="normal_60dp">60dp</dimen>
+    <dimen name="normal_64dp">64dp</dimen>
+    <dimen name="normal_72dp">72dp</dimen>
+    <dimen name="normal_96dp">96dp</dimen>
+
+    <dimen name="normal_txt_12sp">12sp</dimen>
+    <dimen name="normal_txt_14sp">14sp</dimen>
+    <dimen name="normal_txt_15sp">15sp</dimen>
+    <dimen name="normal_txt_16sp">16sp</dimen>
+    <dimen name="normal_txt_18sp">18sp</dimen>
+    <dimen name="normal_txt_20sp">20sp</dimen>
+    <dimen name="normal_txt_22sp">22sp</dimen>
+    <dimen name="normal_txt_24sp">24sp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="font_larger">20sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+
+    <!-- 控件之间的距离 -->
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_normal">15dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="spacing_layout_padding">10dp</dimen>
+    <dimen name="spacing_layout_margin">10dp</dimen>
+
+    <!-- 描述性文字item项的高 -->
+    <dimen name="text_item_height">43dp</dimen>
+    <dimen name="input_method_spacing">2px</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="normal_5dp">5dp</dimen>
+    <dimen name="normal_80dp">80dp</dimen>
+
+</resources>

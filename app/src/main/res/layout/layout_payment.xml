@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/payment_title"
+        app:Title_Color="@color/black_000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_weight="1"
+
+                            android:text="充值选择："
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_10dp"
+                        android:background="@drawable/shape_line_topup"
+                        android:layout_marginRight="@dimen/normal_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/tv_selete"
+                            android:text="会员充值"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/normal_30dp"
+                            android:paddingLeft="@dimen/normal_10dp"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:maxLines="1"
+                            />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/arrow_red_down"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/normal_10dp"
+                            />
+                    </RelativeLayout>
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/tv_top_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员充值："
+                            android:gravity="center_horizontal"
+                            android:textSize="13sp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_10dp"
+                        android:background="@drawable/shape_line_topup"
+                        android:layout_marginRight="@dimen/normal_20dp"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_moneydown"
+                            android:layout_width="15dp"
+                            android:visibility="gone"
+                            android:layout_height="15dp"
+                            android:src="@drawable/arrow_red_down"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/normal_10dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_moneys"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/normal_30dp"
+
+                            android:gravity="center_vertical"
+                           android:paddingLeft="@dimen/dp_10"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+                        <EditText
+                            android:id="@+id/et_vipmoney"
+                            android:layout_width="match_parent"
+                            android:hint="100元的倍数"
+                            android:padding="3dp"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:textSize="13sp"
+                            android:layout_height="@dimen/normal_30dp"
+
+                            android:background="@drawable/shape_line_topup"
+                            />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TableRow>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:text="共计金额："
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+
+
+                            />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_marginLeft="@dimen/normal_10dp"
+                        android:layout_height="wrap_content"
+                        android:text="0元"
+                        android:id="@+id/tv_totalmoney"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_28dp"
+                android:layout_marginTop="@dimen/normal_24dp"
+                android:text="@string/payment_select_account_hint"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <RadioGroup
+                android:id="@+id/payment_bank_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_28dp"
+                android:layout_marginTop="@dimen/normal_24dp">
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/payment_pay_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:text="为他人充值" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:layout_marginRight="@dimen/normal_30dp"
+                android:layout_marginTop="@dimen/normal_12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/payment_payid"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/normal_40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/payment_btn_bg"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ff4040"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/normal_txt_16sp" />
+
+
+                <!--<Button-->
+                <!--android:id="@+id/payment_btn_generate_payid"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="@dimen/normal_40dp"-->
+                <!--android:layout_marginLeft="@dimen/normal_12dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/login_btn_bg"-->
+                <!--android:text="@string/payment_generate_num_hint"-->
+                <!--android:textColor="@color/white_fff"-->
+                <!--android:textSize="@dimen/normal_txt_16sp" />-->
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/payment_et_pay_other"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_40dp"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:layout_marginRight="@dimen/normal_30dp"
+                android:layout_marginTop="@dimen/normal_24dp"
+                android:layout_weight="1"
+                android:hint="@string/paymeng_other_account_hint"
+                android:maxLines="1"
+                android:textColor="@color/color_333333"
+                android:textCursorDrawable="@color/color_ff4040"
+                android:textSize="@dimen/normal_txt_16sp"
+                android:theme="@style/RedEditTextUnderLine"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:layout_marginTop="@dimen/normal_36dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/payment_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/normal_40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/payment_upload_hint"
+                    android:textColor="@color/white_fff"
+                    android:textSize="@dimen/normal_txt_16sp" />
+
+                <Button
+                    android:id="@+id/payment_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/normal_40dp"
+                    android:layout_marginLeft="@dimen/normal_12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/payment_btn_bg"
+                    android:text="@string/payment_upload_order_hint"
+                    android:textColor="@color/color_ff4040"
+                    android:textSize="@dimen/normal_txt_16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/normal_72dp">
+
+                <TextView
+                    android:id="@+id/payment_tip_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/normal_v_16dp"
+                    android:text="@string/payment_tip_2"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/normal_txt_14sp" />
+
+                <TextView
+                    android:id="@+id/payment_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/payment_tip_2"
+                    android:text="@string/payment_extra_header_hint"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/normal_txt_14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

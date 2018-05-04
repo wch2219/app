@@ -1,0 +1,185 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'admin'
+            keyPassword '112233445566'
+            storeFile file('D:/androidcode/newapp/app/keystore')
+            storePassword '112233445566'
+        }
+        debug {
+            keyAlias 'admin'
+            keyPassword '112233445566'
+            storeFile file('D:/androidcode/app/keystore')
+            storePassword '112233445566'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.xxc.shoppingmall"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 5
+        versionName "3.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86'//, 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        signingConfig signingConfigs.release
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    //添加如下配置就ok了
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+
+    }
+}
+
+repositories {
+    // 添加远程仓库，针对compile 'com.github.lzyzsd:jsbridge:1.0.4'这个库
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //    低版本时可选择以下配置
+
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //    compile 'com.android.support:design:26.1.0'
+
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //    testcompile 'junit:junit:4.12'
+
+    //    androidTestcompile 'com.android.support.test:runner:1.0.1'
+
+    //    androidTestcompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //工具类库
+    compile 'com.blankj:utilcode:1.9.7'
+
+    //权限申请
+    compile 'pub.devrel:easypermissions:1.0.1'
+
+    //网络库
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //java Bean转化工具
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
+    //java 与 js 通信框架
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+
+    //baseActivity
+    compile 'com.king.base:base:3.1.0'
+
+    //base-util
+    compile 'com.king.base:util:1.1.1'
+
+    //dialog窗口
+    compile 'com.github.hss01248:DialogUtil:1.2.5'
+    compile 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    //banner轮播图，预留
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:4.0.0'
+
+    //结合glide的图片转化工具,可将图片圆角化，圆形化
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+
+    //沉浸式状态栏
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    //全能适配器adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+
+    //recycler view分割线
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+    //朋友圈图片选择
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.7@aar'
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.6@aar'
+
+    //选择器
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+
+    //版本更新
+    compile 'com.github.yjfnypeu:UpdatePlugin:2.6.0'
+
+    //以下SDK开发者请根据需要自行选择
+
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+
+    //3.5.5：请务必查看下面注释[1]
+
+    //    compile ('cn.bmob.android:bmob-sdk:3.5.7'){
+
+    //        exclude group: ['com.google.code.gson','com.squareup.*']
+
+    //    }
+
+    //能够兼容Android6.0
+
+    //    compile 'cn.bmob.android:http-legacy:1.0'
+
+    //    compile 'cn.bingoogolapple:bga-banner:2.1.8'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //下拉刷新组件
+    compile 'com.github.anzaizai:EasyRefreshLayout:1.3.1'
+
+    //高德定位
+    //    compile 'com.amap.api:location:latest.integration'
+    compile 'com.amap.api:3dmap:latest.integration'
+    compile 'com.amap.api:map2d:latest.integration'
+
+    //定位功能
+    compile 'com.amap.api:location:latest.integration'
+
+    //跑马灯效果
+    compile 'com.sunfusheng:marqueeview:1.3.3'
+
+    //    微信分享
+    //    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'//没有使用特殊Header，可以不加这行 ）
+}

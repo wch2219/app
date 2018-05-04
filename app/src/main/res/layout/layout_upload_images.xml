@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/upload_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/upload_title_hint"
+        app:Title_Color="@color/black_000" />
+
+    <RelativeLayout
+        android:id="@+id/click_upload"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginLeft="@dimen/normal_32dp"
+        android:layout_marginRight="@dimen/normal_32dp"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        android:background="@color/color_efefef">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_shangchuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_v_16dp"
+                android:text="@string/upload_msg_hint"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/upload_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/upload_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_12dp"
+        android:layout_marginRight="@dimen/normal_12dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/upload_submit_hint"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_18dp"
+        android:layout_marginRight="@dimen/normal_12dp"
+        android:layout_marginTop="@dimen/normal_36dp"
+        android:text="注:点击上传图片后即可返回上层页面提交订单 ^_^"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/normal_txt_12sp" />
+
+</LinearLayout>

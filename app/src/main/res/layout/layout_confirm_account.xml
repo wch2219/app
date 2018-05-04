@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        app:Titile_Txt="@string/forget_pwd_title"
+        app:Title_Color="@color/black_000"
+        app:Left_Res="@drawable/icon_fanhui"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_account"
+            android:textSize="@dimen/normal_txt_16sp"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/confirm_account"
+            android:layout_width="0dp"
+            android:hint="@string/confirm_account_hint"
+            android:inputType="number"
+            android:layout_weight="3"
+            android:theme="@style/edittext_gray_black_normal"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm_bank_num_hint"
+            android:textSize="@dimen/normal_txt_16sp"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/reset_phone"
+            android:layout_width="0dp"
+            android:hint="@string/confirm_input_bank_num_hint"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:theme="@style/edittext_gray_black_normal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:background="@drawable/login_btn_bg"
+        android:textColor="@color/white_fff"
+        android:text="@string/regist_next_step"
+        />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/normal_h_16dp"
+    android:layout_marginRight="@dimen/normal_h_16dp"
+    android:layout_marginTop="@dimen/normal_40dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/transaction_continue"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/continue_pay_hint"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+    <Button
+        android:id="@+id/payment_go_home"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_12dp"
+        android:layout_weight="1"
+        android:background="@drawable/payment_btn_bg"
+        android:gravity="center"
+        android:text="@string/go_back_home_hint"
+        android:textColor="@color/color_ff4040"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

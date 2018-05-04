@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/reset_trade_pwd_title"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/reset_trade_pwd_hint"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <EditText
+            android:id="@+id/reset_trade_pwd_new"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_4dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            android:layout_weight="3"
+            android:background="@drawable/home_title_bg"
+            android:elevation="@dimen/normal_4dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:paddingRight="@dimen/normal_6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/reset_login_confirm_hint"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <EditText
+            android:id="@+id/reset_trade_pwd_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/normal_40dp"
+            android:layout_marginBottom="@dimen/normal_4dp"
+            android:layout_marginRight="@dimen/normal_4dp"
+            android:layout_marginTop="@dimen/normal_4dp"
+            android:layout_weight="3"
+            android:background="@drawable/home_title_bg"
+            android:elevation="@dimen/normal_4dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/normal_4dp"
+            android:paddingRight="@dimen/normal_6dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_trade_pwd_confirm_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/reset_login_confirm_submit"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

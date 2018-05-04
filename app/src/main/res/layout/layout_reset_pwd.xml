@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/forget_pwd_title"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_account"
+            android:textSize="@dimen/normal_txt_16sp"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/reset_phone"
+            android:layout_width="0dp"
+            android:hint="@string/reset_phonenum"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:theme="@style/edittext_gray_black_normal"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_ver_num"
+            android:textSize="@dimen/normal_txt_16sp"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+            <EditText
+                android:id="@+id/reset_ver_num"
+                android:layout_width="0dp"
+                android:hint="@string/reset_ver_hint"
+                android:inputType="number"
+                android:layout_weight="2"
+                android:theme="@style/edittext_gray_black_normal"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/reset_get_ver_num"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/normal_36dp"
+                android:layout_marginBottom="@dimen/normal_4dp"
+                android:background="@drawable/login_btn_bg"
+                android:textColor="@color/white_fff"
+                android:text="@string/reset_get_ver"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_set_pwd_hint"
+            android:textSize="@dimen/normal_txt_15sp"
+            android:maxLines="1"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/reset_set_new_pwd"
+            android:layout_width="0dp"
+            android:hint="@string/reset_newpwd_hint"
+            android:layout_weight="3"
+            android:inputType="textPassword"
+            android:theme="@style/edittext_gray_black_normal"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_confirm_pwd_hint"
+            android:maxLines="1"
+            android:textSize="@dimen/normal_txt_15sp"
+            android:textColor="@color/color_333333"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/reset_confirm_new_pwd"
+            android:layout_width="0dp"
+            android:hint="@string/reset_confirm_new_pwd"
+            android:layout_weight="3"
+            android:inputType="textPassword"
+            android:theme="@style/edittext_gray_black_normal"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:background="@drawable/login_btn_bg"
+        android:textColor="@color/white_fff"
+        android:text="@string/reset_confirm"
+        />
+
+</LinearLayout>

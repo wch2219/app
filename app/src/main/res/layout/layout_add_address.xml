@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/add_new_address_hint"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/add_address_reveiver_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <EditText
+                android:id="@+id/add_address_et_receiver"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:hint="@string/add_address_receiver_name_hint"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp"
+                android:theme="@style/GrayEditTextUnderLine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/add_address_phone_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <EditText
+                android:id="@+id/add_address_et_phone"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:hint="@string/add_address_tel_hint"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp"
+                android:theme="@style/GrayEditTextUnderLine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/add_address_details"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white_fff"
+            android:gravity="left|top"
+            android:hint="@string/add_address_detail_hint"
+            android:paddingBottom="@dimen/normal_10dp"
+            android:paddingLeft="@dimen/normal_h_16dp"
+            android:paddingRight="@dimen/normal_h_16dp"
+            android:paddingTop="@dimen/normal_10dp"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dddddd" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_50dp"
+        android:layout_marginTop="@dimen/normal_6dp"
+        android:background="@color/white_fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_dddddd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_h_16dp"
+            android:text="@string/add_address_set_default_hint"
+            android:textColor="@color/black_000"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+        <CheckBox
+            android:id="@+id/add_address_cb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_h_16dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dddddd" />
+
+
+    <Button
+        android:id="@+id/add_address_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/reset_confirm"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

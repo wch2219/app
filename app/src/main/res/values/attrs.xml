@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommonTitle">
+        <attr name="Titile_Txt" format="string"/>
+
+        <attr name="Right_Txt" format="string" />
+
+        <attr name="Left_Txt" format="string" />
+
+        <attr name="Right_Res" format="reference" />
+
+        <attr name="Left_Res" format="reference" />
+
+        <attr name="Title_Color" format="color" />
+
+        <attr name="Right_Color" format="color" />
+
+        <attr name="Left_Color" format="color" />
+
+        <attr name="Divider_Visiable" format="boolean" />
+
+        <!--<attr name="Left_Show_Txt" format="boolean" />-->
+
+        <!--<attr name="Right_Show_Txt" format="boolean" />-->
+
+    </declare-styleable>
+
+</resources>

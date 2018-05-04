@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/manage_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Divider_Visiable="false"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/manage_address_title"
+        app:Title_Color="@color/black_000" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/manage_address_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/normal_2dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manage_address_bottom"
+        android:layout_below="@+id/manage_address_title" />
+
+    <RelativeLayout
+        android:id="@+id/manage_address_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ff4040"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/manage_address_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/normal_h_16dp"
+            android:src="@drawable/icon_tianjia" />
+
+        <TextView
+            android:id="@+id/manage_address_tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/manage_address_img_add"
+            android:text="@string/manage_address_add_address_hint"
+            android:textColor="@color/white_fff"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

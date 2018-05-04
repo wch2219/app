@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/bank_title"
+        android:layout_width="match_parent"
+        app:Titile_Txt="@string/manage_bank_title"
+        app:Title_Color="@color/black_000"
+        android:background="@color/white_fff"
+        app:Left_Res="@drawable/icon_fanhui"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/manage_bank_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/normal_2dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manage_bank_bottom"
+        android:layout_below="@+id/bank_title" />
+
+    <RelativeLayout
+        android:id="@+id/manage_bank_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ff4040"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/manage_address_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/normal_h_16dp"
+            android:src="@drawable/icon_tianjia" />
+
+        <TextView
+            android:id="@+id/manage_address_tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/manage_address_img_add"
+            android:text="@string/add_bank_hint"
+            android:textColor="@color/white_fff"
+            android:textSize="@dimen/normal_txt_16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

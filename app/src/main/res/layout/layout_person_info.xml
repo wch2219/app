@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        app:Divider_Visiable="false"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Titile_Txt="@string/person_info_title_hint"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_2dp"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_info_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_60dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/person_header_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <ImageView
+                android:id="@+id/person_header_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:src="@drawable/icon_gengduo" />
+
+            <ImageView
+                android:id="@+id/person_info_header"
+                android:layout_width="@dimen/normal_48dp"
+                android:layout_height="@dimen/normal_48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_10dp"
+                android:layout_toLeftOf="@+id/person_header_jiantou"
+                android:src="@drawable/img_morentouxiang" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/person_info_username_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="账号"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/person_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_nick_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/person_nick_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <ImageView
+                android:id="@+id/person_nick_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:src="@drawable/icon_gengduo" />
+
+            <TextView
+                android:id="@+id/person_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_10dp"
+               android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_card_id_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/person_card_id_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <ImageView
+                android:id="@+id/person_card_id_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:src="@drawable/icon_gengduo" />
+
+            <TextView
+                android:id="@+id/person_card_id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_10dp"
+              android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dddddd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_8dp"
+        android:background="@color/color_f4f4f4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dddddd" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_sax_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/person_sax_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <ImageView
+                android:id="@+id/person_sax_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:src="@drawable/icon_gengduo" />
+
+            <TextView
+                android:id="@+id/person_sax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_10dp"
+                android:layout_toLeftOf="@+id/person_sax_jiantou"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:background="@color/color_dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_birthday_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_h_16dp"
+                android:text="@string/person_brithday_hint"
+                android:textColor="@color/black_000"
+                android:textSize="@dimen/normal_txt_16sp" />
+
+            <TextView
+                android:id="@+id/person_tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_10dp"
+                android:layout_toLeftOf="@+id/person_birthday_jiantou"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <ImageView
+                android:id="@+id/person_birthday_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_h_16dp"
+                android:src="@drawable/icon_gengduo" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_dddddd" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/person_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_40dp"
+        android:layout_marginLeft="@dimen/normal_h_16dp"
+        android:layout_marginRight="@dimen/normal_h_16dp"
+        android:layout_marginTop="@dimen/normal_40dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/reset_confirm"
+        android:textColor="@color/white_fff"
+        android:textSize="@dimen/normal_txt_18sp" />
+
+</LinearLayout>

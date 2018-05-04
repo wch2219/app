@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xxc.shoppingmall.widget.CommonTitle
+        android:id="@+id/shield_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:Left_Res="@drawable/icon_fanhui"
+        app:Right_Color="@color/black_000"
+        app:Right_Txt="@string/explain"
+        app:Titile_Txt="@string/extr_histroy_title"
+        app:Title_Color="@color/black_000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_64dp"
+        android:layout_marginLeft="@dimen/normal_10dp"
+        android:layout_marginRight="@dimen/normal_10dp"
+        android:layout_marginTop="@dimen/normal_v_16dp"
+        android:background="@drawable/home_title_bg"
+        android:elevation="@dimen/normal_4dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/shield_date_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/shield_details_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <TextView
+                android:id="@+id/shield_details_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shield_details_year"
+                android:layout_marginTop="@dimen/normal_4dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_txt_14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/shield_details_month"
+                android:layout_alignRight="@+id/shield_details_year"
+                android:layout_marginBottom="@dimen/normal_8dp"
+                android:src="@drawable/icon_xiala" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/normal_1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/shield_out_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shield_tv_out_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转出"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/normal_txt_14sp" />
+
+                <TextView
+                    android:id="@+id/shield_tv_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_2dp"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/normal_txt_18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shield_income_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shield_tv_income_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转入"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/normal_txt_14sp" />
+
+                <TextView
+                    android:id="@+id/shield_tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_2dp"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/normal_txt_18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.ajguan.library.EasyRefreshLayout
+        android:id="@+id/easylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/normal_v_16dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/details_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f4f4f4" />
+    </com.ajguan.library.EasyRefreshLayout>
+
+</LinearLayout>
